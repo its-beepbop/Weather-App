@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Fonts - Pixelify Sans -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <title>Typing Animation</title>
+  <style>
+    .typing-container {
+      font-family: monospace;
+      font-size: 24px;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      border-right: 2px solid;
+      animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 22ch } /* Adjust based on number of characters */
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+  </style>
+</head>
+<body>
+  <div class="typing-container">Welcome to My Website</div>
+</body>
+</html>
